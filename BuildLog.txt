@@ -3,10 +3,10 @@ Using bundled DotNet SDK version: 10.0 win-x64
 Starting AutomationTool...
 Parsing command line: BuildPlugin -Plugin=B:\Projects\SplineMovementDemo\Plugins\SplineMovement\SplineMovement.uplugin -Package=B:\Projects\SplineMovementDemo\Builds\SplineMovement -Rocket -2019
 Initializing script modules...
-Total script module initialization time: 0.16 s.
+Total script module initialization time: 0.63 s.
 Using B:\VisualStudio\Community\MSBuild\Current\Bin\MSBuild.exe
 Executing commands...
-Copying 89 file(s) using max 64 thread(s)
+Copying 109 file(s) using max 64 thread(s)
 Reading plugin from B:\Projects\SplineMovementDemo\Builds\SplineMovement\HostProject\Plugins\SplineMovement\SplineMovement.uplugin...
 Building plugin for host platforms: Win64
 Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEditor Win64 Development -Project="B:\Projects\SplineMovementDemo\Builds\SplineMovement\HostProject\HostProject.uproject" -plugin="B:\Projects\SplineMovementDemo\Builds\SplineMovement\HostProject\Plugins\SplineMovement\SplineMovement.uplugin" -noubtmakefiles -manifest="B:\Projects\SplineMovementDemo\Builds\SplineMovement\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealEditor-Win64-Development.txt"
@@ -27,7 +27,7 @@ Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MS
 =================================
 Using Unreal Build Accelerator local executor to run 8 action(s)
   CPU 8 physical cores, 16 logical cores
-  Memory 63.91 GB physical, 16.07 GB/67.91 GB committed
+  Memory 63.91 GB physical, 16.67 GB/67.91 GB committed
   UBA Storage capacity 40 GB
 [1/8] Compile Resource [x64] Default.rc2
 [2/8] Compile [x64] SharedPCH.UnrealEd.Cpp20.cpp
@@ -38,13 +38,13 @@ Using Unreal Build Accelerator local executor to run 8 action(s)
 [7/8] Link [x64] UnrealEditor-SplineMovement.dll
 [8/8] WriteMetadata UnrealEditor.target [NoUba]
 
-Total time in Unreal Build Accelerator local executor: 36.53 seconds
+Total time in Unreal Build Accelerator local executor: 39.99 seconds
 Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe
 
 Result: Succeeded
-Total execution time: 54.88 seconds
-Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 10.4kb
-Took 55,28s to run dotnet.exe, ExitCode=0
+Total execution time: 79.57 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 13.2kb
+Took 80,52s to run dotnet.exe, ExitCode=0
 Building plugin for target platforms: Win64
 Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Development -Project="B:\Projects\SplineMovementDemo\Builds\SplineMovement\HostProject\HostProject.uproject" -plugin="B:\Projects\SplineMovementDemo\Builds\SplineMovement\HostProject\Plugins\SplineMovement\SplineMovement.uplugin" -noubtmakefiles -manifest="B:\Projects\SplineMovementDemo\Builds\SplineMovement\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt"
 Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt
@@ -63,19 +63,19 @@ Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MS
 =================================
 Using Unreal Build Accelerator local executor to run 3 action(s)
   CPU 8 physical cores, 16 logical cores
-  Memory 63.91 GB physical, 15.45 GB/67.91 GB committed
+  Memory 63.91 GB physical, 16.07 GB/67.91 GB committed
   UBA Storage capacity 40 GB
 [1/3] Compile [x64] SplineMovement.cpp
 [2/3] Compile [x64] Module.SplineMovement.cpp
 [3/3] Compile [x64] SMBlueprintAsyncAction.cpp
 
-Total time in Unreal Build Accelerator local executor: 10.09 seconds
+Total time in Unreal Build Accelerator local executor: 9.56 seconds
 Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame.exe
 
 Result: Succeeded
-Total execution time: 13.15 seconds
+Total execution time: 12.62 seconds
 Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 5.9kb
-Took 13,34s to run dotnet.exe, ExitCode=0
+Took 12,80s to run dotnet.exe, ExitCode=0
 Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Shipping -Project="B:\Projects\SplineMovementDemo\Builds\SplineMovement\HostProject\HostProject.uproject" -plugin="B:\Projects\SplineMovementDemo\Builds\SplineMovement\HostProject\Plugins\SplineMovement\SplineMovement.uplugin" -noubtmakefiles -manifest="B:\Projects\SplineMovementDemo\Builds\SplineMovement\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt"
 Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt
 Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
@@ -92,21 +92,21 @@ Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MS
 =================================
 Using Unreal Build Accelerator local executor to run 3 action(s)
   CPU 8 physical cores, 16 logical cores
-  Memory 63.91 GB physical, 15.04 GB/67.91 GB committed
+  Memory 63.91 GB physical, 15.67 GB/67.91 GB committed
   UBA Storage capacity 40 GB
 [1/3] Compile [x64] SplineMovement.cpp
 [2/3] Compile [x64] Module.SplineMovement.cpp
 [3/3] Compile [x64] SMBlueprintAsyncAction.cpp
 
-Total time in Unreal Build Accelerator local executor: 8.29 seconds
+Total time in Unreal Build Accelerator local executor: 8.25 seconds
 Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame-Win64-Shipping.exe
 
 Result: Succeeded
-Total execution time: 9.89 seconds
+Total execution time: 9.87 seconds
 Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 5.5kb
-Took 10,05s to run dotnet.exe, ExitCode=0
+Took 10,03s to run dotnet.exe, ExitCode=0
 Reading filter rules from B:\Projects\SplineMovementDemo\Builds\SplineMovement\HostProject\Plugins\SplineMovement\Config\FilterPlugin.ini
 Loading FilterPluginWin64.ini
 BUILD SUCCESSFUL
-AutomationTool executed for 0h 1m 19s
+AutomationTool executed for 0h 1m 51s
 AutomationTool exiting with ExitCode=0 (Success)
